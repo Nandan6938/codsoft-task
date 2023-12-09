@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title> Personal Portfolia</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
+        <link rel="stylesheet" href="port.css">
+       
+    </head>
+<body>
+
+<div id="header">
+   <div class="container">
+    
+      <nav>
+        <div class="logo">
+           Portfolio
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+      </nav>
+      
+    <div class="header-text">
+        <h2>Hi,</h2>
+        <h1> I'am <span>Nandan K</span></h1>
+        <h5>A Web Designer<h5>
+            
+    </div>
+    </div>
+    </div>
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="C:\Users\Lenovo\Downloads\WhatsApp Image 2023-12-09 at 12.07.29 AM.jpeg">
+                </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"Hello, I'am Nandan K a dedicated web designer with experience <br> 
+                    crafting visually stunning and functional digital experiences.<br>
+                    I belive in the power of collabration and client centric design.<br>
+                    Throughout each project,I prioritize open communication.<br>
+                    My goal is to create websites that not only look great but <br>
+                    but also drive results and provide an exceptional user experience.</p><br>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>UI/UX</span><br>App interfaces</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>App Development</span><br>Building Android app</li>
+                </ul>
+                
+            </div>
+            <div class="tab-contents " id="Experience">
+                <ul>
+                    <li><span>HTML and CSS</span><br>Different webpages </li>
+                     <li><span>Python</span><br>Games</li>
+                </ul>
+                
+            </div>
+            <div class="tab-contents " id="Education">
+                <ul>
+                    <li><span>School</span><br>VSS International PUBLIC SCHOOL</li>
+                    <li><span>Pre-university</span><br>VIDYANIKETAN PU</li>
+                    <li><span>B-Tech</span><br> JSS Academy</li>
+                </ul>
+                </div>
+                </div>
+        </div>    
+    </div>
+    </div>
+<h2>Projects</h2>
+        <div id="Projects">
+        <div class="container2">
+            <div class="box">
+                <div class="icon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div>
+                <div class="content">
+                    <center><h6>Project 1</h6>
+                    <p>E-commerce Website: <br>Engineered a responsive e-commerce solution through the utilization of HTML, CSS, and JavaScript, incorporating key functionalities such as user authentication, product listings, shopping cart management, and secure payment gateways.</p></center>
+                </div></div>
+            <div class="container2">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-cloud" aria-hidden="true"></i></div>
+                <div class="content">
+                        <center><h6>Project 2</h6>
+                        <p>Weather Forecast Web App: <br> Built a weather forecast web application <br> and leveraged a weather API for real-time data.<br> Implemented features for location-based weather forecasts, interactive UI, and data visualization.<br> Received recognition in a tech community forum for<br> its user-friendly interface and accuracy.</p></center>
+                </div></div>
+            <div class="container2">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                    <div class="content">
+                        <center><h6>Project 3</h6>
+                        <p>Personal Portfolio Website:<br> Designed and built a personal portfolio website using HTML, CSS, and JavaScript <br>to showcase projects, skills, and experiences.<br> Ensured responsiveness across various devices,<br> resulting in increased visibility and engagement.</p></center>
+             </div>
+            </div>
+           </div>
+         </div>
+<div id="res">
+<h2 >Resume</h2>
+<a href="file:///C:/Users/HP/Downloads/Resume1.pdf"><center><span>Click here</span></center></a>
+</div>
+<h2>Contact</h2>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            
+            <div class="contact-me">
+                <p>nandan.6938@gmail.com</p>
+                <p>9916492417</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+            tablink.classList.remove("active-link");
+             }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")   
+        }
+</script>
+        </body>
+        </html>
